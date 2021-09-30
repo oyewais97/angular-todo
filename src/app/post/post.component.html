@@ -1,0 +1,19 @@
+<div>
+<input type="text" [(ngModel)]="postCheck" class="input-text" />
+<br />
+<div style="padding: 20px;">
+<button (click)="add()" class="add-btn"  >ADD</button>
+</div>
+<h1 class="latest-post-heading" class="heading1" > Latest Post </h1>
+<div *ngFor="let x of post; index as i" class="main-container">
+<div class="container1">
+
+
+<p    id="inputField{{i}}" class="main-para" >{{ x }}</p>
+
+<span><button class="update-btn" (click)="updateList(i)">Edit</button></span><span style="margin-left: 10px;"><button class="deleted-btn"  (click)="delete(i)">Delete</button></span>
+
+
+</div>
+</div>
+</div>

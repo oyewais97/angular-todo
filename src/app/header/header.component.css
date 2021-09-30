@@ -1,0 +1,42 @@
+.header{
+    background-color: black;
+    height: 50px;
+}
+.nav-main-li{
+    color: white;
+    
+    
+    
+}
+.nav-link{
+    display: inline;
+    padding: 1.6rem;
+}
+
+.nav-header{
+    color: white;
+    font-size: 2rem;
+}
+.nav-form{
+    float: right;
+    padding: 1.1rem;
+}
+.login-button{
+    padding: 0.2rem;
+    margin-left: 8px;
+    border: 3px solid black ;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 2px;
+    
+}
+.search-input{
+    border: transparent;
+    border-radius: 8px;
+    height: 1.4rem;
+    width: 70%;
+    border: none;
+    outline: none;
+
+}
