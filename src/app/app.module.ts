@@ -9,6 +9,7 @@ import { PostEditComponent } from './post-edit/post-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { PostComponent } from './post/post.component';
 import { FormsModule, NgModel } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule, NgModel } from '@angular/forms';
     AuthComponent,
     PostComponent,
     RoutingComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

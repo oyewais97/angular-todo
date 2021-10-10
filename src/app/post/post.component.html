@@ -7,8 +7,12 @@
 <h1 class="latest-post-heading" class="heading1" > Latest Post </h1>
 <div *ngFor="let x of post; index as i" class="main-container">
 <div class="container1">
-
-
+   
+    <div *ngIF="show; then edit " class="alert alert-success box-msg" role="alert">
+        <ng-template #edit>
+<input value="tittle" type="text" class="edit-input" />
+</ng-template>
+</div>
 <p    id="inputField{{i}}" class="main-para" >{{ x }}</p>
 
 <span><button class="update-btn" (click)="updateList(i)">Edit</button></span><span style="margin-left: 10px;"><button class="deleted-btn"  (click)="delete(i)">Delete</button></span>
@@ -16,4 +20,17 @@
 
 </div>
 </div>
+
+<p>{{showone}}</p>
+</div>
+<div>
+    
+    <div class="card col-11 mx-auto" style="width: 18rem; display: inline-block; margin: 20px; text-align: center;" *ngFor="let card of cards" >
+      <img src={{card.img}} class="card-img-top col-12      " alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{card.title}}</h5>
+        <p class="card-text"> {{card.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { items } from './item';
 
 @Component({
   selector: 'app-post-edit',
@@ -6,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-edit.component.css']
 })
 export class PostEditComponent implements OnInit {
+  
+  todos : items={description:'', isChecked:true}
+  todosInput = ''
+  filter : 'all'| 'active' | 'isChecked' = 'all';
+
+  allItem =[{}];
+
+  addItem(){
+    this.allItem.push(this.todos);
+  }
+
+  delete(index: number){
+   
+  }
 
   constructor() { }
 

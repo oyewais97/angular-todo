@@ -1,1 +1,14 @@
-<p>post-edit works!</p>
+<div>
+<h1>
+    THIS IS NEW TODO
+</h1>
+<input [(ngModel)]= 'todos.description' />
+<button (click)='addItem(); '>ADD</button>
+<div *ngFor='let x of allItem; let i=index '>
+    <p>
+        {{x}}
+    </p>
+    <button (click)='delete(i)'>DELETE</button>
+
+</div>
+</div>
